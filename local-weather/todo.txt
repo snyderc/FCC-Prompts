@@ -1,0 +1,28 @@
+Implement Google API to get state, not just city/country?
+http://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&sensor=true
+https://developers.google.com/maps/documentation/geocoding/intro
+(Otherwise:
+https://stackoverflow.com/questions/6159074/given-the-lat-long-coordinates-how-can-we-find-out-the-city-country
+)
+
+Remove dummy code
+
+Remove hard-coded lat/long
+
+Thinking about timeouts...
+https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition
+https://stackoverflow.com/questions/6380195/how-to-detect-negative-user-response-for-geolocation
+https://gist.github.com/GFoley83/10092929
+https://stackoverflow.com/questions/5947637/function-fail-never-called-if-user-declines-to-share-geolocation-in-firefox
+
+
+
+Misc
+http://diveinto.html5doctor.com/geolocation.html
+http://nathansh.com/2015/07/13/geolocation/
+
+??
+https://tutorialzine.com/2016/06/quick-tip-detecting-your-location-with-javascript
+
+Note: Firefox is a great developer's tool! Loading JSON, it loads it in a way that shows you what's there, orderly.
+Firefox and Chrome handle some things differently so note that.

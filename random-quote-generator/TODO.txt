@@ -1,0 +1,6 @@
+    // TODO Quote: Convert spaces to %20
+    // Then rewrite "https://twitter.com/intent/tweet?text=TEXTGOESHERE"
+    // You should also have a random quote load upon initial page load,
+    // and not just when button is clicked.
+    // Separate the random generator into its own function.
+    // And then you're done!

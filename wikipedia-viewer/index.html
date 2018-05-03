@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Wikipedia Viewer</title>
+
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body class="bg-light">
+  <div class="container-fluid">
+  <div class="row">
+    <div class="side-margin col-sm-2">
+    </div>
+    <div id="center-content" class="col-sm-8">
+      <h1 id="large-title" class="display-1">Just Another Wikipedia Viewer</h1>
+      <div class="row">
+        <div id="small-title" class="pt-4">
+        </div>
+          <form id="search-form" class="input-group col-sm-12 mb-4">
+              <input id="input-search" type="text" class="form-control" placeholder="Search for..." aria-label="Search for...">
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="submit">Search</button>
+              </span>
+          <a href="https://en.wikipedia.org/wiki/Special:Random" class="btn btn-secondary ml-2" type="button">Show Random Article</a>
+        </form>
+      </div>
+    </div>
+    <div class="side-margin col-sm-2">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-1">
+    </div>
+    <div id="results" class="col-sm-10 list-group pb-4">
+    </div>
+    <div class="col-sm-1">
+    </div>
+  </div>
+
+</div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+<!-- <script src='https://use.fontawesome.com/2738f8ae5c.js'></script> -->
+
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>

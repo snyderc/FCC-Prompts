@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Show the Local Weather</title>
+
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+  <div class="container-fluid bg-dark">
+  <div class="row vertical-center">
+    <div class="col-sm-3">
+    </div>
+    <div class="col-sm-6">
+<div class="jumbotron text-center bg-light">
+  <h1>Local Weather</h1>
+  <h2 id="location">Loading...</h2>
+  <div id="conditions"></div>
+  <div id="temperature">
+    <span id="currentTemp"></span>
+    <button hidden id="degreesC" type="button" class="btn btn-outline-primary btn-sm active" aria-pressed="true">&deg;C</button>
+    <button hidden id="degreesF" type="button" class="btn btn-outline-primary btn-sm">&deg;F</button>
+  </div>
+
+</div>
+
+    </div>
+    <div class="col-sm-3">
+    </div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+<!-- <script src='https://use.fontawesome.com/2738f8ae5c.js'></script> -->
+
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
