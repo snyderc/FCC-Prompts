@@ -1,4 +1,4 @@
-# Project Title
+# Projects I've Done Through FreeCodeCamp (Non-Beta Curriculum)
 
 This repository contains projects I've worked on based on the project ideas from FreeCodeCamp.org -- specifically the first version of their curriculum. Projects that come from what is currently (as of 2018) called their "beta" curriculum have been placed in a separate repository, "FreeCodeCamp-Beta."
 
