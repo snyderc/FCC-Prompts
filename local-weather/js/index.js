@@ -57,12 +57,11 @@ function displayWeather(lat, lon) {
     $("#conditions").html(`${iconHTML} ${conditionsHTML}`);
 
     // Outputs temperature. API gives it in Celsius.
-    var temperaInteger = `${Math.round(json.main.temp)}`;
-    $("#currentTemp").html(`${temperaInteger}`);
+    var celsiusInteger = Math.round(json.main.temp);
+    var fahrenheitInteger = Math.round(celsiusInteger * 1.8 + 32);
+    $("#currentTemp").html(`${fahrenheitInteger}`);
     $("#degreesC").removeAttr("hidden");
     $("#degreesF").removeAttr("hidden");
-
-
 
   });
 }
