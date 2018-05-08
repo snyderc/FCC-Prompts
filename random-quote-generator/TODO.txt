@@ -1,6 +1,17 @@
-    // TODO Quote: Convert spaces to %20
-    // Then rewrite "https://twitter.com/intent/tweet?text=TEXTGOESHERE"
-    // You should also have a random quote load upon initial page load,
-    // and not just when button is clicked.
-    // Separate the random generator into its own function.
-    // And then you're done!
+[DONE] Todo: Quote: Convert spaces to %20
+Then rewrite "https://twitter.com/intent/tweet?text=TEXTGOESHERE"
+
+[DONE] Todo: You should also have a random quote load upon initial page load,
+and not just when button is clicked.
+
+[DONE] Todo: Separate the random generator into its own function.
+--> Can be further modularized, but for a simple app like this one,
+current level of modularization is sufficient
+
+[DONE] Todo: Refactor to convert jQuery calls to vanilla JS
+--> Removed the "document ready" wrapper b/c no need to wait for other elements to load
+
+[WONTFIX] Bug: In Firefox I get an "XML Parsing Error: syntax error"
+when reading the JSON file.
+Possible cause is that I'm loading a local file, not from a server.
+Will need to test out on a server.
