@@ -1,0 +1,6 @@
+.board {
+    $board-width: 30;
+    display: flex;
+    flex-wrap: wrap;
+    width: $m-size * $board-width;
+}

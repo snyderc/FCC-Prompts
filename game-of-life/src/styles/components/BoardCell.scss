@@ -1,0 +1,16 @@
+.board-cell-button {
+    border: 1px solid black;
+    height: $m-size;
+    text-align: center;
+    width: $m-size;
+}
+
+.board-cell-button-alive {
+    @extend .board-cell-button;
+    background-color: green;
+}
+
+.board-cell-button-dead {
+    @extend .board-cell-button;
+    background-color: gray;
+}

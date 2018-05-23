@@ -1,0 +1,1 @@
+React boilerplate based on Boilerplate V1 from Andrew Mead's React/Udemy tutorial

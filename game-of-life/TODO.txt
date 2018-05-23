@@ -1,0 +1,22 @@
+General map of to-dos:
+[DONE] Get clickable board
+[DONE] Handle generations
+[] Present Generations count to user
+[] Expose Settings to user (Start, Pause, Clear, etc.)
+[] Allow generations to be advanced automatically instead of just manually
+[] Have randomly generated starting pattern & auto-play that pattern
+[] Handle different board sizes
+
+Items to revisit later:
+
+Board.scss: Update the width so it conforms with the board width
+when the board X and Y are changed to different sizes.
+(Variables, function to do the multiplication, etc.)
+
+BoardCell.scss: I used @extend so that each BoardCell button
+only needed one class. Might want to experiment with allowing
+each button to have multiple classes -- one that's fixed and one
+that changes depending on whether the cell is alive or dead.
+
+GameOfLifeApp.js: Refactor HandleClearBoard so it and the random pattern generator
+use the same function with different parameters passed in
