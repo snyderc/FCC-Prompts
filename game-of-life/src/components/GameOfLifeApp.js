@@ -7,8 +7,8 @@ import Board from './Board';
 class GameOfLifeApp extends React.Component {
     state = {
         boardSize: {
-            x: 30,
-            y: 20
+            x: 40,
+            y: 40
         },
         cellArray: [],
         generationsCount: 0,

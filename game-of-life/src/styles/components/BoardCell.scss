@@ -1,5 +1,5 @@
 .board-cell-button {
-    border: 1px solid black;
+    border: 0.1px solid darkslategray;
     height: $m-size;
     text-align: center;
     width: $m-size;
@@ -12,5 +12,5 @@
 
 .board-cell-button-dead {
     @extend .board-cell-button;
-    background-color: gray;
+    background-color: lightgrey;
 }
