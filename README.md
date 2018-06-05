@@ -16,4 +16,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
+* PurpleBooth for readme format: https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
 * FreeCodeCamp for project ideas: https://www.freecodecamp.org/map
