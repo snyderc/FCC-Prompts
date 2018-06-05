@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Portfolio Webpage</title>
+
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <!-- Note for production: One of the Bootstrap features requires Popper.js according to Console -->
+
+  <!-- To-dos:
+  X. "About" goes inactive during first X pixels from top of screen -- before the About div actually reaches the page top
+  X. Gap between sections so menu loses Active class altogether for a bit
+  X. Contact part is small enough that it doesn't make Contact active via scrolling. (The way to do it would be have each section a fixed height -- the height of a typical browser.)
+  -->
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Chris Snyder</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link active" href="#about">About <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+        <a class="nav-item nav-link" href="#contact">Contact</a>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <div class="container py-4" id="about">
+    <div class="row text-center">
+      <div class="col-lg-8 my-auto">
+        <p class="lead">Editor. Wearer of many hats. Miniature golf aficianado. World's foremost expert in pretending to be a foremost expert.</p>
+        <hr>
+        <p>Ask me about my ability to write humorous song lyrics.</p>
+      </div>
+        <div class="col-lg-4 my-auto">
+          <img class="rounded-circle" src="images/csnyder.jpg" width="250px">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-4 text-center" id="portfolio">
+    <h1>Portfolio</h1>
+
+    <div class="card-deck my-4">
+
+        <div class="card px-4 py-4">
+          <img class="card-img-top" src="images/theater-masks.svg" height="150px" alt="Card image cap">
+          <div class="card-block py-4">
+            <h4 class="card-title">Trial by Audience</h4>
+            <p class="card-text">Co-wrote, co-produced, and music directed an original sendup of Gilbert & Sullivan shows. Performed Summer 2014 by the MIT Gilbert &amp; Sullivan Players, Cambridge, MA.</p>
+          </div>
+        </div>
+
+      <div class="card px-4 py-4">
+          <img class="card-img-top" src="images/stack-of-books.svg" height="150px" alt="Card image cap">
+          <div class="card-block py-4">
+            <h4 class="card-title">Disciplined Entrepreneurship</h4>
+            <p class="card-text">Edited <em>Disciplined Entrepreneurship</em> and <em>Disciplined Entrepreneurship Workbook</em>, written by MIT entrepreneurship expert and Professor of the Practice Bill Aulet. Published by Wiley.</p>
+          </div>
+        </div>
+
+      </div>
+
+    <div class="card-deck my-4">
+
+        <div class="card px-4 py-4">
+          <img class="card-img-top" src="images/golf.svg" height="150px" alt="Card image cap">
+          <div class="card-block py-4">
+            <h4 class="card-title">MiniGolf Connecticut</h4>
+            <p class="card-text">Ran ~2003-2008. Number 1 on Google for several keywords, including "miniature golf in CT". A couple hundred unique visitors per day during the busy season. Used an image map to link to reviews by county (take that, Randall Munroe!).</p>
+          </div>
+        </div>
+
+      <div class="card px-4 py-4">
+          <img class="card-img-top" src="images/racecar.svg" height="150px" alt="Card image cap">
+          <div class="card-block py-4">
+            <h4 class="card-title">Midtown Madness</h4>
+            <p class="card-text">Organized and co-hosted the last known Midtown Madness 1 tournament on MSN Zone through RacingClan.net.</p>
+          </div>
+        </div>
+
+      </div>
+  </div>
+
+  <div class="container py-4 text-center" id="contact">
+    <h1>Contact</h1>
+    <a class="btn" href="mailto:christopher.snyder@alumni.tufts.edu"><i class="fa fa-envelope-o fa-3x"></i></a> <a class="btn" href="http://www.twitter.com/snyderc"><i class="fa fa-twitter fa-3x"></i></a>
+  </div>
+
+  <footer class="footer py-4">
+    <div class="container">
+      <p class="text-center">(C) 2017 Chris Snyder <i class="fa fa-bicycle" aria-hidden="true"></i></p>
+    </div>
+  </footer>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+  <script src='https://use.fontawesome.com/2738f8ae5c.js'></script>
+
+  <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+body {
+    background-color: #CCCCCC;
+}
+
+#about {
+  background-color:#EEEEEE;
+}
+
+#portfolio {
+  background-color:#DDDDDD;
+}
+
+#contact {
+  background-color:#EEEEEE;
+}
+
+.footer {
+  background-color:#AAAAAA;
+  color:#EEEEEE;
+}
