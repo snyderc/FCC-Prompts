@@ -1,7 +1,2 @@
-bootstrap.min.css
-bootstrap.min.js
-example-outputs
-jquery.min.js
-misc
-popper.min.js
+local_libraries/
 .DS_Store

@@ -1,0 +1,210 @@
+<!--
+To-dos:
+
+- On mobile, it may be better to let the nav scroll away. Right now,
+it's fixed to always appear on the page, which might be annoying at small window sizes.
+
+- On mobile, the lack of visible scrollbars until you click makes the nav frustrating.
+Options include:
+... Change the nav to a drop-down menu
+... Change the nav to the three horizontal line overlay (which I find frustrating
+for usability purposes, even though it seems to be a sleek standard these days)
+... Present the whole nav and have the user scroll through before reaching the intro
+(less desirable if the menu is very long)
+
+
+-->
+
+<html>
+  <head>
+    <title>Weather Documentation</title>
+    <!-- Needed to make media queries work -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+      /* Flex-powered top bar with 2 independent scrolling columns
+      under it from https://joshtronic.com/2015/05/03/layout-with-fixed-header-and-independently-scrolling-columns/ */
+      body {
+        margin: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      code {
+        display: block;
+      }
+      .topbar {
+        height: 5px;
+        background-color: black;
+      }
+      .content {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+      }
+      .content div {
+        margin: 0;
+        padding: 0 10 0 10;
+        flex: 1; /* Lets all flex items be the same length */
+        overflow: scroll;
+      }
+      #nav-wrapper {
+        max-width: 300px;
+      }
+      #navbar ul {
+        margin: 0;
+        padding: 0;
+      }
+      #navbar li {
+        list-style: none;
+        border-top: solid;
+        padding: 10 0 10 10;
+      }
+      #navbar a {
+        text-decoration: none;
+      }
+      #navbar h1 {
+        margin-top: 0;
+      }
+      @media screen and (max-width: 600px) {
+        .content {
+          flex-direction: column;
+        }
+        #nav-wrapper {
+          max-width: 100%;
+          flex: 1 1 33%;
+          text-align: center;
+        }
+        #main-wrapper {
+          flex: 1 1 67%;
+        }
+      }
+    </style>
+    <!-- JS for FreeCodeCamp automated test suite -->
+    <!--<script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>-->
+  </head>
+  <body>
+    <div class="topbar">
+    </div>
+    <div class="content">
+      <div id="nav-wrapper">
+        <nav id="navbar">
+          <header>
+            <h1>Weather Documentation</h1>
+          </header>
+          <ul>
+            <a class="nav-link" href="#Introduction"><li>Introduction</li></a>
+            <a class="nav-link" href="#Snow"><li>Snow</li></a>
+            <a class="nav-link" href="#Wintry_Mix"><li>Wintry Mix</li></a>
+            <a class="nav-link" href="#Thunderstorm"><li>Thunderstorm</li></a>
+            <a class="nav-link" href="#Hail_vs_Sleet"><li>Hail vs Sleet</li></a>
+          </ul>
+        </nav>
+      </div>
+      <div id="main-wrapper">
+        <main id="main-doc">
+          <section id="Introduction" class="main-section">
+            <header>
+              <h2>Introduction</h2>
+            </header>
+            <p>Weather documentation is important for several reasons:
+              <ul>
+                <li>It tells you the difference between hail and sleet</li>
+                <li>It reduces the odds that I will get mad at you for calling sleet "hail"</li>
+                <li>It relieves high blood pressure caused by people saying "it's hailing!" in the middle of January, which would ordinarily be cause for concern -- as it should never hail in January -- but it turns out the people are simply using the word "hail" incorrectly</li>
+              </ul>
+              The National Weather Service issues alerts for severe weather, which used to be in all caps:
+            </p>
+            <code>NATIONAL WEATHER SERVICE!
+            </code>
+            <p>The alerts are no longer in all caps, but for nostalgia's sake, and to fulfill the outlines of this web assignment, alert text will be rendered in monospace all caps.
+            </p>
+          </section>
+          <hr>
+          <section id="Snow" class="main-section">
+            <header>
+              <h2>Snow</h2>
+            </header>
+            <p>If at least 6 inches of snow is forecast to fall, a "Winter Storm" alert will be issued by the National Weather Service. A "Watch" means that there is medium confidence that the storm will hit soon. A "Warning" means there is high confidence that the storm will hit imminently or that the storm is in progress hitting an area.</p>
+            </p>
+            <code>WINTER STORM WARNING / WINTER STORM WATCH
+            </code>
+            <p>But sometimes, only a few inches of snow will fall.
+            </p>
+            <code>WINTER WEATHER ADVISORY
+            </code>
+            <p>And sometimes, the amount of snow that will accumulate is negligible and no specific advisories are issued. Instead, depending on the local National Weather Service office, a general advisory may be issued.</p>
+            <code>HAZARDOUS WEATHER OUTLOOK
+            </code>
+          </section>
+          <hr>
+          <section id="Wintry_Mix" class="main-section">
+            <header>
+              <h2>Wintry Mix</h2>
+            </header>
+            <p>Snow, sleet, freezing rain, the works!
+            </p>
+            <code>WINTER WEATHER ADVISORY
+            </code>
+          </section>
+          <hr>
+          <section id="Thunderstorm" class="main-section">
+            <header>
+              <h2>Thunderstorm</h2>
+            </header>
+            <p>Thunderstorms produce some or all of the following:
+              <ul>
+                <li>Lightning (accompanied by thunder)</li>
+                <li>Hail</li>
+                <li>High Winds</li>
+                <li>Rain</li>
+              </ul>
+              Thunderstorms are known for their tall cumulonimbus clouds.
+            </p>
+            <code>SEVERE THUNDERSTORM WARNING / SEVERE THUNDERSTORM WATCH
+            </code>
+            <p>If a thunderstorm is expected to produce a tornado, additional alerts will be issued:
+            </p>
+            <code>TORNADO WARNING / TORNADO WATCH
+            </code>
+          </section>
+          <hr>
+          <section id="Hail_vs_Sleet" class="main-section">
+            <header>
+              <h2>Hail vs Sleet</h2>
+            </header>
+            <p>This item usually would not get its own top-level header, but for purposes of practicing code, it gets the full header treatment now!</p>
+            <p>Hail and sleet are two fundamentally different concepts. Some people call any ice falling from the sky "hail" but in doing so, they make a fundamental error that affects emergency preparedness efforts.</p>
+            <p>Hail:
+              <ul>
+                <li>Usually falls during a thunderstorm</li>
+                <li>Can grow to a large size before falling</li>
+                <li>Is formed when a water droplet is forced upward into a tall thundercloud and freezes. As it moves higher, more water freezes to it, making it larger. It drops after reaching a weight greater than the thundercloud can support.</li>
+                <li>Can be harmful to life and property</li>
+              </ul>
+              Sleet:
+              <ul>
+                <li>Falls during a "wintry mix" event, when there is precipitation with temperatures around freezing</li>
+                <li>Is a constant size -- a small ice pellet</li>
+                <li>Is formed when snow melts and refreezes, or rain freezes, on its way down (note that if it does not refreeze until making contact with an object, it is instead considered "freezing rain")</li>
+                <li>Is almost always harmless to life and property</li>
+              </ul>
+            </p>
+            <p>You will sometimes see hail during a severe thunderstorm:
+            </p>
+            <code>SEVERE THUNDERSTORM WARNING
+            </code>
+            <p>You will usually see sleet during a wintry mix, which is sometimes accompanied by a winter weather advisory.
+            </p>
+            <code>WINTER WEATHER ADVISORY
+            </code>
+          </section>
+          <hr>
+          <footer style="text-align:center; font-size:0.8em; margin-bottom:10px;">
+            The Weather Documentation aka "It's Not Hail, It's Sleet" v1.0.0
+          </footer>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

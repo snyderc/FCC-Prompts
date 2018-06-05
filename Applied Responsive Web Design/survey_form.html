@@ -1,0 +1,192 @@
+<!--
+Suggestions for future versions:
+- Use padding on the text entry fields and labels so that you can
+make the fields taller without affecting how the field and label align
+with each other horizontally
+
+-->
+
+<html>
+  <head>
+    <title>Survey Form</title>
+
+    <style>
+
+    body {
+      background-color: #57e3ff;
+      font-family: sans-serif;
+    }
+
+    main {
+      width: 75%;
+      margin: auto;
+      padding: 5px;
+      text-align: center;
+      background-color: #ff8957
+    }
+
+    input[type=text],
+    input[type=email] {
+      height: 2em;
+      width: 25em;
+      max-width: 95%;
+    }
+
+    input[type=number],
+    input[type=email] {
+      height: 2em;
+      max-width: 95%;
+    }
+
+    textarea {
+      height: 6em;
+      width: 25em;
+      max-width: 95%;
+    }
+
+    button {
+      font-size: 1em;
+    }
+
+    .question {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .entry-label {
+      display: inline-block;
+      width: 35%;
+      text-align: right;
+      vertical-align: top;
+    }
+
+    .entry-field {
+      display: inline-block;
+      width: 55%;
+      text-align: left;
+    }
+
+    .box-label {
+      display: inline-block;
+    }
+
+    .radio-and-checkbox {
+      list-style: none;
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+    }
+
+    <!-- For removing browser styling from fieldsets -->
+    legend {
+      padding: 0;
+      display: table;
+    }
+    fieldset {
+      border: 0;
+      padding: 0.01em 0 0 0;
+      margin: 0;
+      min-width: 0;
+    }
+    body:not(:-moz-handler-blocked) fieldset {
+      display: table-cell;
+    }
+    <!-- End fieldset reset -- source: https://thatemil.com/blog/2015/01/03/reset-your-fieldset/ -->
+
+    </style>
+
+    <!-- JS for FreeCodeCamp automated test suite -->
+    <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+
+  </head>
+  <body>
+    <main>
+    <h1 id="title">Survey of Your Life</h1>
+    <p id="description">This survey will ask you a series of personal questions.</p>
+    <form id="survey-form">
+
+      <div class="question">
+        <div class="entry-label">
+          <label id="name-label" for="name">Your Name:</label>
+        </div>
+        <div class="entry-field">
+          <input id="name" type="text" name="name" required placeholder="Enter your name here">
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="entry-label">
+          <label id="email-label" for="email">Your Email:</label>
+        </div>
+        <div class="entry-field">
+          <input id="email" type="email" name="email" required placeholder="Enter your email here">
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="entry-label">
+          <label id="number-label" for="number">Your Age:</label>
+        </div>
+        <div class="entry-field">
+          <input id="number" type="number" name="number" min="0" max="150" placeholder="Age">
+        </div>
+      </div>
+
+      <div class="question">
+        <div class="entry-label">
+          <label for="preferred-animal">Preferred Animal:</label>
+        </div>
+        <div class="entry-field">
+          <select id="dropdown" name="preferred-animal">
+            <option disabled selected>Choose one...</option>
+            <option value="cat">Cat</option>
+            <option value="dog">Dog</option>
+            <option value="rooster">Rooster</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="question">
+        <fieldset>
+          <div class="entry-label">
+            <legend>Preferred Writing Implement:</legend>
+          </div>
+          <div class="entry-field">
+            <ul class="radio-and-checkbox">
+              <li><label for="pencil"><input id="pencil" type="radio" name="writing-implement" value="pencil">Pencil</input></label></li>
+              <li><label for="pen"><input id="pen" type="radio" name="writing-implement" value="pen">Pen</input></label></li>
+              <li><label for="rooster"><input id="rooster" type="radio" name="writing-implement" value="rooster">Rooster</input></label></li>
+            </ul>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="question">
+        <fieldset>
+          <div class="entry-label">
+            <legend>Do you like:</legend>
+          </div>
+          <div class="entry-field">
+            <ul class="radio-and-checkbox">
+              <li><label for="kaleidoscopes"><input id="kaleidoscopes" type="checkbox" name="what-you-like" value="kaleidoscopes">Kaleidoscopes</input></label></li>
+              <li><label for="planetariums"><input id="planetariums" type="checkbox" name="what-you-like" value="planetariums">Planetariums</input></label></li>
+              <li><label for="roosters"><input id="roosters" type="checkbox" name="what-you-like" value="roosters">Roosters</input></label></li>
+            </ul>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="question">
+        <div class="entry-label">
+          <label for="additional-comments">Additional Comments:</label>
+        </div>
+        <div class="entry-field">
+          <textarea id="additional-comments"></textarea>
+        </div>
+      </div>
+
+      <button id="submit" type="submit">Submit the Form!</button>
+
+    </form>
+  </main>
+  </body>
+</html>

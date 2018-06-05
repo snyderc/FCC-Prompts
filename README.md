@@ -1,18 +1,10 @@
-# Projects I've Done Through FreeCodeCamp (Non-Beta Curriculum)
+# Projects I've Done Based on FreeCodeCamp Project Prompts
 
-This repository contains projects I've worked on based on the project ideas from FreeCodeCamp.org -- specifically the first version of their curriculum. Projects that come from what is currently (as of 2018) called their "beta" curriculum have been placed in a separate repository, "FreeCodeCamp-Beta."
+This repository contains projects I've worked on based on the project ideas from FreeCodeCamp.org.
 
-### Prerequisites
+Some projects were completed using the pre-2018 version of the FreeCodeCamp curriculum, or are supplemental projects not part of the 2018 version's required projects. Those are located in the "Additional Projects" folder.
 
-Any prerequisites will be listed within the individual projects.
-
-### Installing
-
-Any installation instructions will be listed within the individual projects.
-
-## Deployment
-
-Any deployment notes will be listed within the individual projects.
+All projects are written in JavaScript, using various libraries and frameworks.
 
 ## Author
 
@@ -20,9 +12,8 @@ Any deployment notes will be listed within the individual projects.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Acknowledgments
 
-* PurpleBooth for readme format: https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
 * FreeCodeCamp for project ideas: https://www.freecodecamp.org/map
