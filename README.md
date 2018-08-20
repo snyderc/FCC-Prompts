@@ -1,4 +1,4 @@
-# Projects I've Done Based on FreeCodeCamp Project Prompts
+# Projects I've Done Based on FCC Project Prompts
 
 This repository contains projects I've worked on based on the project ideas from FreeCodeCamp.org.
 
