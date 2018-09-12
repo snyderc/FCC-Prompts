@@ -8,7 +8,7 @@ function getWiki(searchTerm) {
     type: 'GET',
     // Custom header called for by MediaWiki API but I don't think
     // it's actually being added per my LiveHTTPHeaders plugin
-    headers: { 'Api-User-Agent': 'Test Wikipedia Viewer/0.1 (christopher.snyder.m@gmail.com)' },
+    headers: { 'Api-User-Agent': 'Test Wikipedia Viewer/0.1 (api@snyderc.me)' },
     success: processData,
     error: function(errorMessage) {
       console.log(`Error: ${errorMessage}`);
