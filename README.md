@@ -1,8 +1,8 @@
-# Projects I've Done Based on FreeCodeCamp Project Prompts
+# Projects I've Done Based on FCC Project Prompts
 
 This repository contains projects I've worked on based on the project ideas from FreeCodeCamp.org.
 
-Some projects were completed using the pre-2018 version of the FreeCodeCamp curriculum, or are supplemental projects not part of the 2018 version's required projects. Those are located in the "additional_projects" folder.
+Some projects were completed using the pre-2018 version of the FreeCodeCamp project list, or are supplemental projects not part of the 2018 version's required projects. Those are located in the "additional_projects" folder.
 
 All projects are written in JavaScript, using various libraries and frameworks.
 
